@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card">
+      <div class="card-header" style="text-align:center;">Inicio de Sesion</div>
+    </div>
+    
+    <div class="card-body" style="background-color: #515960; border:black solid 1px;">
+{{!-- Formulario --}}
+      <form action="/users/signin" method="post">
+      
+        <div class="divimg">
+          <img src="/img/pok2v2.png"  class="img m-4" alt="">
+        </div>
+      
+        <div class="form-group">
+          <input type="email" name="email"  class="form-control" placeholder="Correo">
+        </div>
+        <div class="form-group">
+          <input type="password" name="password"  class="form-control" placeholder="Contraseña">
+        </div>
+        <button class="bnt btn-primary btn-block">Iniciar</button>
+      </form>
+
+    </div>
+  </div>
+</div>

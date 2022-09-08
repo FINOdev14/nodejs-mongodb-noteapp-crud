@@ -1,0 +1,17 @@
+{{#if error}}
+    <div style="display:flex; justify-content: space-between;" class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}}
+    <button  type="button" class=" btn-primary btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{/if}}
+
+{{#each errors}}
+    <div style="display:flex; justify-content: space-between;" class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}}
+    <button  type="button" class=" btn-primary btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{/each}}

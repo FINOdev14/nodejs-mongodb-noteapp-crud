@@ -1,0 +1,26 @@
+.divimg{
+    position: relative;
+    width: 490px;
+    height: 250px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.img{
+    width: 490px;
+    height: 300px;
+    
+    position: absolute;
+    padding-right: 150px;
+    border-radius: 100%;
+    
+    
+    
+}
+
+.direction{
+    margin: 0;
+    padding: 0;
+    margin-left: 90%;
+}

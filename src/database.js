@@ -5,9 +5,8 @@ const mongoose = require('mongoose');
 const MONGODB_URI = "mongodb+srv://kevin:12345@cluster0.6xvoq7h.mongodb.net/?retryWrites=true&w=majority";
 
  mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-    
+    useUnifiedTopology: true,
+    useNewUrlParser: true
     //useCreateIndex: true
 })
     .then(db => console.log('DataBase is connected'))

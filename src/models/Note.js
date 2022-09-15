@@ -11,6 +11,10 @@ const NotaSchema = new Schema({
     user:{
         type: String,
         required: true
+    },
+    UPRemove:{
+        type: Boolean,
+        require: true
     }
 },{
     timestamps: true

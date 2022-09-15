@@ -12,7 +12,7 @@ notasCtrl.renderNoteForm = (req,res)=>{
 notasCtrl.createNewNote = async (req,res)=>{
     //console.log(req.body);
     const {titulo, descripcion} = req.body;
-    const newNota = new Nota({titulo: titulo, descripcion: descripcion});
+    const newNota = new Nota({titulo: titulo, descripcion: descripcion, UPRemove: false});
     //console.log(newNota);
     newNota.user = req.user.id;
     await newNota.save();
